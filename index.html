@@ -31,13 +31,35 @@
     html {
       font-family: Roboto;
       text-align: center;
-      padding-top: 20px;
       font-size: 1.5em;
     }
 
     h1 {
       font-family: 'Faster One';
       letter-spacing: 6px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #ccc;
+      color: #333;
+      padding: 4px;
+      font-size: 0.6em;
+    }
+
+    .footer>span {}
+
+    div.left {
+      float: left;
+      // text-align: left;
+    }
+
+    div.right {
+      float: right;
+      // text-align: right;
     }
 
   </style>
@@ -49,7 +71,11 @@
   <![endif]-->
 
   <h1>Finlay Brunton Racing</h1>
-  <p>Site coming <span style="font-family: 'Faster One'; font-size: 1.2em;">soon</span>...</p>
+  <p>Site coming <span style="font-family: 'Faster One'; font-size: 1.2em;"> soon</span>...</p>
+  <div class="footer">
+    <div class='left'>&copy; Finlay Brunton Racing</div>
+    <div class='right'>Sponsors: BettySketzy&nbsp;&nbsp;&nbsp;&nbsp;</div>
+  </div>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
   <script>
@@ -59,7 +85,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site ID. -->
   <script>
     window.ga = function () {
       ga.q.push(arguments)
